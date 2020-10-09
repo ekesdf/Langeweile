@@ -1,4 +1,7 @@
 
+
+# Grundaustellung vor jedem Spiel
+
 Feld = [
     ["Tw ", "Pw ", "Lww", "Kw ", "Dw ", "Lwb", "Pw ", "Tw "],
     ["Bw ", "Bw ", "Bw ", "Bw ", "Bw ", "Bw ", "Bw ", "Bw "],
@@ -16,9 +19,11 @@ Figuren_kekickt = []
 
 
 
+def Position(Reihe,Spalte):
 
+    index = Spalte+((Reihe-1)*8)
 
-
+    return index
 
 
 
