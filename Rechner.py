@@ -17,13 +17,51 @@ Teamschwarz = ["Bb ", "Tb ", "Pb ", "Lbb", "Kb ", "Db ", "Lbw"]
 Teamweiß = ["Bw ", "Tw ", "Pw ", "Lww", "Kw ", "Dw ", "Lwb"]
 Figuren_kekickt = []
 
+Ersterzug_Bauern_weiß    = [(+2, 0)]
+Ersterzug_Bauern_schwarz = [(-2, 0)]
+Ersterzug_Pferd = []
+
+Regel_Bauer_weiß = {"Ersterzug":Ersterzug_Bauern_weiß,}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 def Position(Reihe,Spalte):
 
     index = Spalte+((Reihe-1)*8)
 
-    return index
+    return int(index)
 
 def leere_Liste_Feld_anfang():
 
@@ -35,22 +73,5 @@ def leere_Liste_Feld_anfang():
 
             Liste_Feld.append(("   ",Reihe+1,Spalte+1))
 
-    return Liste_Feld
-
-print(leere_Liste_Feld_anfang())
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    return list(Liste_Feld)
 
